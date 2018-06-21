@@ -1,0 +1,50 @@
+html,body{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  /*盒子模型，很关键，是免死金牌*/
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+a:hover{
+  text-decoration: none;
+  color: #000;
+}
+ul,li{
+  list-style: none;
+}
+/* 清除浮动 */
+.clearfix::before,
+.clearfix::after{
+  content:'';
+  display: block;
+  line-height: 0;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+.f_l{
+  float: left;
+}
+.f_r{
+  float: right;
+}
+
+//定义字体
+@font-face {
+  font-family: 'iconfont';  /* project id 716202 */
+  src: url('//at.alicdn.com/t/font_716202_js2w6tjd3vd.eot');
+  src: url('//at.alicdn.com/t/font_716202_js2w6tjd3vd.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_716202_js2w6tjd3vd.woff') format('woff'),
+  url('//at.alicdn.com/t/font_716202_js2w6tjd3vd.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_716202_js2w6tjd3vd.svg#iconfont') format('svg');
+}
