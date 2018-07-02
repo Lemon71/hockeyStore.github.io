@@ -1,0 +1,35 @@
+.allStick_content {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.allStick_content .allStick_title {
+  padding-left: 10px;
+  font-size: 30px;
+  line-height: 40px;
+  background-color: #333;
+  height: 40px;
+  width: 100%;
+  color: white;
+}
+.allStick_content ul {
+  width: 100%;
+  border-collapse: collapse;
+}
+.allStick_content ul li {
+  text-align: center;
+  width: 50%;
+  height: 180px;
+  float: left;
+  border: 1px solid #000;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 0 -1px -1px 0;
+}
+.allStick_content ul li .stick_title {
+  font-size: 15px;
+  line-height: 20px;
+  height: 20px;
+  border-collapse: collapse;
+}

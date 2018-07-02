@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="App">
 <head>
     <meta charset="UTF-8">
     <title>冰球护具商城</title>
+    <!--引入jquery-->
+    <script src="./public/libs/jquery.min.js"></script>
+    <!--引入angularJS-->
+    <script src="./bower_components/angular/angular.min.js"></script>
+    <script src="./bower_components/angular-route/angular-route.js"></script>
     <!--引入样式-->
-    <link rel="stylesheet" href="./public/less/index.css">
+    <link rel="stylesheet" href="./public/less/index.css?param=Math.random()">
     <link rel="stylesheet" href="./public/less/base.css">
+    <!--引入自己写的js-->
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/app.js"></script>
+    <script src="./scripts/controllers.js"></script>
+
 </head>
-<body>
+<body >
 <div class="hockey_banner">
     <div class="logo"></div>
     <h1>HOCKEY STORE</h1>
@@ -22,19 +32,59 @@
 <div class="content">
     <div class="sidelist">
         <dl>
-            <dt>一堆数字</dt>
-            <dd>1</dd>
-            <dd>2</dd>
-            <dt>又一堆数字</dt>
-            <dd>5</dd>
-            <dd>6</dd>
-            <dd>7</dd>
+            <dt><a href="#!/hh">首页<span>+</span><span style="display: none ;font-size:10px;font-weight: bold;">—</span></a></dt>
+            <dt><a href="#!/skate">球鞋 轮播图<span>+</span><span style="display: none ;font-size:10px;font-weight: bold;">—</span></a></dt>
+            <dd>冰球鞋</dd>
+            <dd>轮滑球鞋</dd>
+            <dd>轮子</dd>
+            <dd>刀架</dd>
+            <dt><a href="#!/stick">球杆 $http\指令<span>+</span><span style="display: none ;font-size:10px;font-weight: bold;">—</span></a></dt>
+            <dd>碳纤</dd>
+            <dd>木制</dd>
+            <dd>杆身</dd>
+            <dd>杆头</dd>
+            <dd>折扣球杆</dd>
+            <dt><a href="#!/video">点球 视频欣赏<span>+</span><span style="display: none ;font-size:10px;font-weight: bold;">—</span></a></dt>
+            <dt><a href="#!/address">球场地址 百度API<span>+</span><span style="display: none ;font-size:10px;font-weight: bold;">—</span></a></dt>
+            <dd>协和中学</dd>
+            <dd>骏景中学</dd>
+            <dd>岭南画派纪念中学</dd>
+            <dd>绿翠中学</dd>
+            <dd>奥体冰场</dd>
+            <dt><a href="#!/bilibili">B站视频 跨域抓包<span>+</span><span style="display: none ;font-size:10px;font-weight: bold;">—</span></a></dt>
+            <dt><a href="#!/helmet">头盔<span>+</span><span style="display: none ;font-size:10px;font-weight: bold;">—</span></a></dt>
+            <dd>玻璃面罩</dd>
+            <dd>铁网面罩</dd>
+            <dt><a href="#!/shoulder">护甲<span>+</span><span style="display: none ;font-size:10px;font-weight: bold;">—</span></a></dt>
+            <dd>冰用护甲</dd>
+            <dd>陆用护甲</dd>
+            <dt><a href="#!/elbow">护肘<span>+</span><span style="display: none ;font-size:10px;font-weight: bold;">—</span></a></dt>
+            <dt><a href="#!/gloves">手套<span>+</span><span style="display: none ;font-size:10px;font-weight: bold;">—</span></a></dt>
+            <dt><a href="#!/shin">护腿<span>+</span><span style="display: none ;font-size:10px;font-weight: bold;">—</span></a></dt>
+            <dt><a href="#!/pad">护臀<span>+</span><span style="display: none ;font-size:10px;font-weight: bold;">—</span></a></dt>
+
 
         </dl>
     </div>
     <div class="center">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda doloremque dolores dolorum eum excepturi fugit in inventore iste nam nemo numquam officiis quam quidem, similique sunt tempore voluptas? A amet consectetur consequatur cum cumque debitis deserunt dignissimos distinctio dolores est eveniet ex harum, illo illum incidunt ipsam ipsum laborum libero molestiae mollitia nemo neque nihil nisi, nulla odio omnis quam quasi quisquam repellat sed sit sunt tempore tenetur ullam veniam vero voluptatum. Adipisci, aperiam culpa deleniti expedita in maiores, nam natus, perferendis possimus quam quas saepe suscipit voluptas? Distinctio dolores esse inventore nemo omnis quam quisquam, sunt voluptas. Deleniti eius enim esse ipsam repellat? Accusamus aliquam delectus est, expedita labore laborum maiores minus officia omnis quas similique totam vel velit veritatis, voluptatibus! Accusantium adipisci amet commodi cumque deleniti dolorem doloremque dolores ea eius enim eos error eum harum illo illum in itaque magnam, magni nam necessitatibus neque nostrum nulla obcaecati officiis omnis perferendis quas, quibusdam quis reiciendis rem repellat repellendus sunt tempora totam unde veniam voluptatum! Inventore iure, necessitatibus officia quae quaerat repudiandae voluptates! Amet culpa cupiditate impedit quia reiciendis reprehenderit veritatis vero voluptatibus. A, accusamus adipisci animi assumenda debitis dignissimos doloremque eligendi, esse hic impedit inventore, iusto libero mollitia natus necessitatibus nisi possimus quasi quibusdam quidem reiciendis repellendus tempora ut? Accusantium aliquid amet asperiores commodi consequatur dignissimos eum illo illum incidunt ipsam nesciunt nostrum officia pariatur perferendis placeat porro qui quibusdam reprehenderit rerum saepe sapiente similique sint suscipit totam, veniam. Accusantium alias cupiditate dolor ea, eius eos eveniet harum, iure laudantium magni nam neque nostrum optio quaerat quia quod repellendus sequi. Ab eius eveniet, ipsam optio quo sint veniam voluptatem? Accusamus cum dolorum inventore nesciunt repellendus? Ab autem blanditiis consequuntur, dolor enim error expedita facere maiores non odit officiis quos totam, ut. Aliquid aperiam atque error eveniet explicabo laboriosam laborum molestias nam neque nesciunt quae quaerat quisquam reiciendis sapiente sint sit tempora temporibus ullam, vitae voluptate! Ad, aliquam consectetur consequatur enim eveniet expedita id, impedit itaque nobis numquam possimus provident quia quibusdam quod veniam veritatis voluptates. Dicta libero nam neque quibusdam suscipit? Amet asperiores aspernatur beatae blanditiis delectus dolores ducimus eaque eius et expedita explicabo, fugit ipsa iste mollitia non, pariatur possimus, quas quibusdam quisquam quod quos recusandae reprehenderit saepe sunt suscipit vitae voluptatem voluptatum. Illo incidunt, libero nisi pariatur praesentium quas ut? Alias aliquam animi autem consectetur delectus, doloremque ducimus excepturi exercitationem fugit impedit inventore laboriosam libero maiores mollitia necessitatibus nobis optio provident quaerat quibusdam quis quisquam recusandae saepe sunt tempore ullam vitae voluptatem voluptatum. Eveniet, magni officia placeat quaerat repellendus sapiente. Aperiam, architecto blanditiis consequuntur cum expedita illum inventore ipsum numquam officia porro, quam temporibus velit vero! Aliquam dolorum eaque harum ipsa nostrum odit qui repellendus rerum sit voluptas. Alias aliquid assumenda atque commodi consequatur deleniti dignissimos dolorem doloremque dolorum error eum explicabo hic ipsum itaque necessitatibus nobis, omnis porro praesentium quia quis quos ratione recusandae sit soluta suscipit tenetur veritatis? Ad aut blanditiis eligendi, enim eos et fugiat hic libero porro possimus ratione veritatis voluptates.
+        <div class="some"></div>
+        <div ng-view>
+        </div>
     </div>
 </div>
+
+<div class="bottom">
+    <div class="bottom_title">
+        <h3>冰球商店</h3>
+        <span>此页面用于练习，练习的内容为angularJS框架（$http服务，ng-repeat等指令，route路由），H5视频标签，百度地图api接口，fiddler抓包，跨域请求数据；<br>一切图片及内容均来源于网上与作者想法；<br>这个项目的样式做得很粗糙，练习的方向在于功能</span>
+    </div>
+
+    <div class="bottom_author">
+        <span>作者：李松锋 ；github账号：Lemon71</span>
+        <div><a href="#top">v</a></div>
+    </div>
+
+</div>
+
 </body>
 </html>

@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'iconfont';
+  /* project id 716202 */
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), url('../font/iconfont.woff') format('woff'), url('../font/iconfont.ttf') format('truetype'), url('../font/iconfont.svg#iconfont') format('svg');
+}
+.wrapper {
+  height: 580px;
+  width: 100%;
+}
+.wrapper video {
+  width: 100%;
+  margin-top: -210px;
+}
+.wrapper .video_mask {
+  position: absolute;
+  top: 0;
+  left: 200px;
+  z-index: 9999;
+  width: 999px;
+  height: 578px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.wrapper .video_mask .play_button {
+  font-family: iconfont;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 100px;
+  color: #fff;
+  margin-left: -50px;
+  margin-top: -50px;
+}
+.wrapper video::-webkit-media-controls-enclosure {
+  margin-bottom: 220px;
+}

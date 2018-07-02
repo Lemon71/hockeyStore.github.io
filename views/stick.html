@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="./public/less/stick.css?v=1">
+<div class="allStick_content">
+    <div class="allStick_title">Pro Stock Hockey Sticks Senior</div>
+    <ul class="clearfix">
+        <li ng-repeat="stick in pro">
+            <div class="stick_title">{{stick.title}}</div>
+            <img ng-src="{{stick.url}}" alt="">
+        </li>
+    </ul>
+</div>
+
+<div class="allStick_content">
+    <div class="allStick_title">Composite Hockey Sticks SENIOR</div>
+    <ul class="clearfix">
+        <li ng-repeat="stick in senior">
+            <div class="stick_title">{{stick.title}}</div>
+            <img ng-src="{{stick.url}}" alt="">
+        </li>
+    </ul>
+</div>
+
+<div class="allStick_content">
+    <div class="allStick_title">Composite Hockey Sticks INTERMEDIATE</div>
+    <ul class="clearfix">
+        <li ng-repeat="stick in inter">
+            <div class="stick_title">{{stick.title}}</div>
+            <img ng-src="{{stick.url}}" alt="">
+        </li>
+    </ul>
+</div>
+

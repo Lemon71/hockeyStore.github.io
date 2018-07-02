@@ -1,0 +1,19 @@
+<head>
+    <meta name="referrer" content="no-referrer"/>
+</head>
+<link rel="stylesheet" href="./public/less/bilibili.css">
+<h1>bilibili中搜索“冰球”返回的数据(点击会跳转B站)</h1>
+<ul class="bilibili_ul">
+    <li ng-repeat="video in videoList" class="bilibili_li">
+        <a href="{{video.arcurl}}" target="_blank">
+            <div class="bilibili_img">
+                <img ng-src="{{video.pic}}" alt="">
+                <div class="bilibili_mask">
+                    <div class="bilibili_author"><span>&#xe600;</span>{{video.author}}</div>
+                    <div class="bilibili_play"><span>&#xe708;</span>{{video.play}}</div>
+                </div>
+            </div>
+            <span class="bilibili_title">{{video.title}}</span>
+        </a>
+    </li>
+</ul>

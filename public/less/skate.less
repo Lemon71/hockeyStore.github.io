@@ -1,0 +1,85 @@
+//定义字体
+@font-face {
+  font-family: 'iconfont';  /* project id 716202 */
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/iconfont.woff') format('woff'),
+  url('../font/iconfont.ttf') format('truetype'),
+  url('../font/iconfont.svg#iconfont') format('svg');
+}
+.rolling{
+  width: 100%;
+  background-color: black;
+  position: relative;
+  .banner_ul{
+    width: 798px;
+    height: 519px;
+    position: relative;
+    li{
+      width: 1000px;
+      position: absolute;
+      top: 0;
+      left: 0px;
+      a{
+        width: 100%;
+        img{
+          width: 100%;
+
+        }
+      }
+    }
+  }
+  .left_button{
+    background-color: rgba(0,0,0,0.5);
+    width: 100px;
+    height: 200px;
+    font-family: iconfont;
+    top:150px;
+    left: 0;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    line-height: 200px;
+    font-size: 50px;
+    display: none;
+    cursor: pointer;
+  }
+  .right_button{
+    background-color: rgba(0,0,0,0.5);
+    width: 100px;
+    height: 200px;
+    top: 150px;
+    right: 0px;
+    font-family: iconfont;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    line-height: 200px;
+    font-size: 50px;
+    display: none;
+    cursor: pointer;
+  }
+  .index_ul{
+    background-color: #fff;
+    width: 100%;
+    height: 70px;
+    li{
+      height: 70px;
+      float: left;
+      width: 33.3333333%;
+      text-align: center;
+      line-height: 70px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      border-bottom: 1px solid #222;
+      a{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    li:hover{
+      cursor: pointer;
+      background-color: #999;
+    }
+  }
+}

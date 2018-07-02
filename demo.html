@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试路由</title>
+</head>
+<body ng-app="App">
+<ul>
+    <li><a href="#/index">1</a></li>
+    <li><a href="#/lemon">2</a></li>
+    <li><a href="#dk">3</a></li>
+    <li><a href="#wtf">4</a></li>
+    angular1.6之后改了一下
+</ul>
+<div ng-view></div>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-route/angular-route.min.js"></script>
+<script>
+    var App = angular.module("App",["ngRoute"]);
+    App.config(["$routeProvider",function ($routeProvider) {
+        $routeProvider.when('/index',{
+            template:"<h1>怎么回事啊</h1>"
+
+        });
+    }])
+</script>
+</body>
+</html>

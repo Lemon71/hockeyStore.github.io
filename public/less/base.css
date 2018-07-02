@@ -60,6 +60,6 @@ li {
 @font-face {
   font-family: 'iconfont';
   /* project id 716202 */
-  src: url('//at.alicdn.com/t/font_716202_js2w6tjd3vd.eot');
-  src: url('//at.alicdn.com/t/font_716202_js2w6tjd3vd.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_716202_js2w6tjd3vd.woff') format('woff'), url('//at.alicdn.com/t/font_716202_js2w6tjd3vd.ttf') format('truetype'), url('//at.alicdn.com/t/font_716202_js2w6tjd3vd.svg#iconfont') format('svg');
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), url('../font/iconfont.woff') format('woff'), url('../font/iconfont.ttf') format('truetype'), url('../font/iconfont.svg#iconfont') format('svg');
 }

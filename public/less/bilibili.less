@@ -1,0 +1,85 @@
+//定义字体
+@font-face {
+  font-family: 'iconfont';  /* project id 716202 */
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/iconfont.woff') format('woff'),
+  url('../font/iconfont.ttf') format('truetype'),
+  url('../font/iconfont.svg#iconfont') format('svg');
+}
+
+.bilibili_ul{
+  width: 100%;
+  .bilibili_li{
+    width: 31%;
+    float: left;
+    overflow: hidden;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #999;
+    margin-left: 10px;
+    margin-right: 10px;
+    a{
+      width: 100%;
+      .bilibili_img {
+        position: relative;
+        img {
+          width: 100%;
+          height: 200px;
+          border-bottom: solid 1px #999;
+
+          }
+
+        .bilibili_mask{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 99%;
+          background-color: rgba(0, 0, 0, 0);
+          .bilibili_author{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            color: #eee;
+            span{
+              font-family: iconfont;
+            }
+          }
+          .bilibili_play{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            color: #eee;
+            span{
+              font-family: iconfont;
+            }
+          }
+        }
+
+      }
+      .bilibili_mask:hover{
+        z-index: 9999;
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+
+
+      .bilibili_title{
+        //display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;//其实我设置了高度这几个限制行数没什么用，还是写一下吧
+        -webkit-box-orient: vertical;
+        height: 50px;
+        text-align: center;
+        padding-top:5px;
+        color: #2aabd2;
+      }
+
+    }
+  }
+}
+
+
+
